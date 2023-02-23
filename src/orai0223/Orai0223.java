@@ -17,9 +17,9 @@ public class Orai0223
         return osszeg;
     }
     
-    static String osszead(int a, int b)
+    static int osszead(int a, int b)
     {
-        return String.format("%d + %d = % d", a, b, a+b);
+        return a + b;
     }
     
     static void kiir(String szoveg)
