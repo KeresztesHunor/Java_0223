@@ -4,8 +4,10 @@ public class Orai0223
 {
     public static void main(String[] args)
     {
-        kiir(String.format("Az első 10 szám összege: %d", elso10SzamOsszege()));
-        kiir(String.format("%d + %d = %d", 3, 4, osszead(3, 4)));
+        kiir(String.format("Az első 10 szám összege: %d\n", elso10SzamOsszege()));
+        kiir(String.format("%d + %d = %d\n", 3, 4, osszead(3, 4)));
+        kiir(String.format("%d + %d + %d + %d = %d\n", 1, 2, 3, 4, osszead(osszead(1, 2), osszead(3, 4))));
+        kiir(String.format("%d + %d + %d gyöke: %f\n", 3, 4, 2, Math.sqrt(osszead(3, osszead(4, 2)))));
     }
     
     static int elso10SzamOsszege()
@@ -25,6 +27,6 @@ public class Orai0223
     
     static void kiir(String szoveg)
     {
-        System.out.println(szoveg);
+        System.out.print(szoveg);
     }
 }
