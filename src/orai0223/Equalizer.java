@@ -23,15 +23,15 @@ public class Equalizer
     
     static void eq()
     {
-        int db = rnd.nextInt(3, 7);
-        for (int i = 0; i < db; i++)
-        {
-            System.out.print(MAGENTA + " ");
-        }
-        System.out.println("");
+        sorKiiras(rnd.nextInt(3, 7));
     }
     
     static void eq(int db)
+    {
+        sorKiiras(db);
+    }
+    
+    static void sorKiiras(int db)
     {
         for (int i = 0; i < db; i++)
         {
