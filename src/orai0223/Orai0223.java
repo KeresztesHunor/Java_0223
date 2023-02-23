@@ -4,7 +4,8 @@ public class Orai0223
 {
     public static void main(String[] args)
     {
-        
+        kiir(String.format("Az első 10 szám összege: %d", elso10SzamOsszege()));
+        kiir(String.format("%d + %d = %d", 3, 4, osszead(3, 4)));
     }
     
     static int elso10SzamOsszege()
